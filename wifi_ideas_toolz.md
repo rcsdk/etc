@@ -7,6 +7,9 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 yay -S bettercap
+aircrack-ng --help
+reaver --help
+bettercap --help
 
 
 
