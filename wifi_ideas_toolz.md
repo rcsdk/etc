@@ -1,3 +1,91 @@
+Here’s a revised version of your prompt that emphasizes urgency and includes the tools you need for the task:
+
+---
+
+**Urgent Command:**
+
+I need you to work with me **immediately** as the world's most famous, tactical, and ruthless penetration tester and computing engineer, **known for solving any kind of Linux defense attack problem**. Time is critical, and I need **military-grade solutions** that cut through the noise. The traditional process with LLMs feels like slow lessons in Linux, but **I need results fast**, no trial and error, just the **elite commands** that get me straight to the solution.
+
+Right now, I'm on **Arch Linux**, and my TP-LINK TPWR849N router is malfunctioning in repeating Wi-Fi signals. It has always worked **extremely fast**, but **it's failing to repeat the signal** properly now. Here's the situation:
+
+### **Problem Breakdown:**
+
+- **Router Model**: TP-LINK TPWR849N  
+- **Environment**: Small 3-meter long apartment near a window, connected to a nearby Wi-Fi network (both 2.4GHz and 5GHz are working fast when connected directly to my laptop).  
+- **Symptoms**:  
+    - **Repeater setup**: I can only see the 2.4GHz signal in the list, not the 5GHz signal.  
+    - **2.4GHz signal** works when connected directly to my laptop, but the speed as a repeater is extremely slow.
+    - **Manual setup** using the 5GHz MAC address doesn’t work at all.  
+
+### **Immediate Action Needed:**
+I need **no-nonsense, fast solutions** to fix this issue and ensure both 2.4GHz and 5GHz bands are working at full speed. **I need tools** that will allow me to optimize the router and verify the signal, fast.
+
+### **Tools and Commands to Execute:**
+
+1. **Airmon-ng** and **Aircrack-ng Suite**:
+   - I need to **enable monitor mode** and ensure I’m capturing everything relevant on the network.
+   - Commands for scanning and cracking Wi-Fi encryption to get the full picture:
+     ```bash
+     sudo iwlist wlan0 scan | grep -E "Channel|ESSID|Signal"
+     sudo iwconfig wlan0 mode monitor
+     ```
+   
+2. **Kismet**:
+   - **Monitor nearby networks** to find any interference or conflicting signals.
+   - Identify the least crowded channels for optimal performance.
+
+3. **Wireshark**:
+   - Capture traffic in real-time to analyze what’s going wrong with the signal flow, and look for issues like interference or packet loss.
+
+4. **Bettercap** (in case we need to go further with network manipulation):
+   - This can also help monitor traffic and detect any deeper issues related to network performance.
+
+5. **System Optimization Commands**:
+   - Force **channel** to 1, 6, or 11 for minimal interference.
+   - Set **bandwidth** to 20MHz for more stable connections.
+   - Adjust **transmit power** and **mode** for max performance:
+     ```bash
+     iwconfig wlan0 txpower 30mW
+     iwconfig wlan0 mode N
+     ```
+
+6. **Router Positioning Adjustments**:
+   - Move the router halfway between the window and the target “dead zone.”
+   - Elevate it about 1.5 meters and position it at a **45° angle** to maximize coverage.
+
+7. **Real-Time Monitoring**:
+   - **Monitor the signal quality** constantly to check for stability and performance improvements:
+     ```bash
+     watch -n 1 "iwconfig wlan0 | grep -E 'Rate|Quality'"
+     ```
+
+---
+
+### **Execution Priority:**
+1. Perform the **interference scan** using **Airmon-ng** and **Kismet**.
+2. Adjust the router's **settings** and use the **optimum channels and bandwidth**.
+3. **Physically position the router** for better signal spread.
+4. Monitor the performance **live** with **Wireshark** and **Bettercap** if needed.
+5. Once you have results, we’ll decide if we need a more **nuclear option** (e.g., flashing DD-WRT firmware).
+
+---
+
+### **Goal:**  
+- Get the TP-LINK TPWR849N router back to its **fast, stable repeating mode**.
+- Ensure **both 2.4GHz and 5GHz** are properly functioning.
+- Use **military-grade tools and techniques** to tackle this network issue at full speed—**no delays, no fluff, just precision action**.
+
+**Let’s execute this now, time is critical.**
+
+---
+
+This version maintains the urgency and emphasizes the use of elite tools like Airmon-ng, Aircrack-ng, Kismet, Wireshark, and Bettercap while also ensuring a rapid, no-nonsense approach to solving the Wi-Fi repeater issue.
+
+
+
+
+
+
 **Airmon-ng** is a well-known tool in the Wi-Fi penetration testing and network security community. It is part of the **Aircrack-ng** suite, which is widely used for tasks like wireless network analysis, monitoring, packet sniffing, and cracking WEP/WPA keys. Specifically, **Airmon-ng** is used to enable monitor mode on wireless interfaces, which allows you to capture raw wireless traffic for analysis.
 
 ### **Strengths of Airmon-ng:**
