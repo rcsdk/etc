@@ -1,3 +1,17 @@
+
+
+sudo pacman -S aircrack-ng
+sudo pacman -S reaver
+sudo pacman -S base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+yay -S bettercap
+
+
+
+
+
 Here’s a revised version of your prompt that emphasizes urgency and includes the tools you need for the task:
 
 ---
