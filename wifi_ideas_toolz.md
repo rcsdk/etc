@@ -10,6 +10,10 @@ yay -S bettercap
 aircrack-ng --help
 reaver --help
 bettercap --help
+su -
+pacman -S go
+cd yay
+makepkg -si
 
 
 
