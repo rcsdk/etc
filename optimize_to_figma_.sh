@@ -1,10 +1,16 @@
+https://github.com/MatMoul/archfi
+
+
+
+
+
 
 6. Figma-Specific Tweaks
 Use the Figma Desktop App over Chromium for better performance:
 Download Figma’s AppImage:
 bash
 Copy code
-wget https://github.com/Figma-Linux/figma-linux/releases/latest/download/figma-linux.AppImage
+c
 chmod +x figma-linux.AppImage
 ./figma-linux.AppImage
 Verify smooth rendering in the AppImage.
