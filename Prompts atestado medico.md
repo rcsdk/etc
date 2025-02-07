@@ -27,7 +27,7 @@ Career Coach Assume the role of a professional career coach with expertise in pe
 
 
 
-give me 20 possibilities to find online - not offline - and different from all the ones you already gave to find ATESTADO MEDICO UPA rj  - and if possible jacarepagua, campo grande or barra - in high resolutoin digital files
+give me 20 possibilities to find online - not offline - and different from all the ones you already gave to find ATESTADO MEDICO UPA rj  - and if possible jacarepagua, campo grande or barra - in high resolutoin digital files together with its respective urls in pure text.
 
 
 
